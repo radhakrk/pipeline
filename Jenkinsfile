@@ -11,5 +11,10 @@ pipeline {
         build(job: 'pipe-test', propagate: true)
       }
     }
+    stage('MSBuild') {
+      steps {
+        bat 'C:\\Users\\sxanandv\\Desktop\\MSBUILD\\Batch-files\\MSBUILD.bat'
+      }
+    }
   }
 }
