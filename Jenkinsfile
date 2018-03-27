@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Compile') {
       steps {
-        build 'pipe-test'
+        build(job: 'pipe-test', propagate: true)
       }
     }
   }
