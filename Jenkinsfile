@@ -6,5 +6,10 @@ pipeline {
         echo 'hello pipeline'
       }
     }
+    stage('Compile') {
+      steps {
+        build 'pipe-test'
+      }
+    }
   }
 }
