@@ -16,5 +16,10 @@ pipeline {
         bat 'C:\\Users\\sxanandv\\Desktop\\MSBUILD\\Batch-files\\MSBUILD.bat'
       }
     }
+    stage('') {
+      steps {
+        bat(script: 'Unzip.bat', returnStatus: true, returnStdout: true)
+      }
+    }
   }
 }
